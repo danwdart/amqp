@@ -1,0 +1,30 @@
+{
+    "name": "Amqp",
+    "description": "Amqp proxy for dependency injection and testing",
+    "version": "dev-master",
+    "type": "library",
+    "keywords": [
+        "amqp",
+        "rabbitmq",
+    ],
+    "homepage": "https://projectchaplin.com",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Dan Dart",
+            "email": "chaplin@dandart.co.uk",
+            "homepage": "http://dandart.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "chaplin@dandart.co.uk",
+  
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Amqp\\": "src/"
+        }
+    }
+}

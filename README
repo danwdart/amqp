@@ -1,0 +1,3 @@
+Amqp
+
+A PHP proxy used for dependency injection and testing Amqp applications.
