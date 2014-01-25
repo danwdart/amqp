@@ -5,7 +5,7 @@
     "type": "library",
     "keywords": [
         "amqp",
-        "rabbitmq",
+        "rabbitmq"
     ],
     "homepage": "https://projectchaplin.com",
     "license": "AGPL-3.0",
@@ -18,8 +18,8 @@
         }
     ],
     "support": {
-        "email": "chaplin@dandart.co.uk",
-  
+        "email": "chaplin@dandart.co.uk"
+    }, 
     "require": {
     },
     "autoload": {
