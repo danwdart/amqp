@@ -32,7 +32,7 @@ class Queue
     public function __construct(Channel $amqpChannel)
     {
         $this->_amqpChannel = $amqpChannel;
-        $this->_amqpQueue = new AMQPQueue($amqpChannel->getAMQPChannel());
+        $this->_amqpQueue = new \AMQPQueue($amqpChannel->getAMQPChannel());
     }
     
     public function ack($strDeliveryTag, $intFlags = AMQP_NOPARAM)
@@ -52,7 +52,7 @@ class Queue
 
     public function consume(callable $callback, $intFlags = AMQP_NOPARAM)
     {
-        $callback2 = function(AMQPEnvelope $amqpEnvelope)  use ($callback) {
+        $callback2 = function(\AMQPEnvelope $amqpEnvelope)  use ($callback) {
             $callback(new Envelope($amqpEnvelope));
         };
         return $this->_amqpQueue->consume($callback2, $intFlags);
