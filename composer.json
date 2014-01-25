@@ -1,5 +1,5 @@
 {
-    "name": "Amqp",
+    "name": "dandart/amqp",
     "description": "Amqp proxy for dependency injection and testing",
     "version": "dev-master",
     "type": "library",
