@@ -37,7 +37,7 @@ class Exchange
     public function __construct(Channel $amqpChannel)
     {
         $this->_amqpChannel = $amqpChannel;
-        $this->_amqpExchange = new AMQPExchange($amqpChannel->getAMQPChannel());
+        $this->_amqpExchange = new \AMQPExchange($amqpChannel->getAMQPChannel());
     }
     
     public function bind($strDestExchangeName, $strSourceExchangeName, $strRoutingKey)
