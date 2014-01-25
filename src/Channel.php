@@ -32,7 +32,7 @@ class Channel
     public function __construct(Connection $amqpConnection)
     {
         $this->_amqpConnection = $amqpConnection->getConnection();
-        $this->_amqpChannel = new AMQPChannel($amqpConnection->getConnection());
+        $this->_amqpChannel = new \AMQPChannel($amqpConnection->getConnection());
     }
 
     public function getAMQPChannel()

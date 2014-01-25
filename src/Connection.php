@@ -30,7 +30,7 @@ class Connection
     
     public function __construct(Array $arrCredentials = array())
     {
-        $this->_amqpConnection = new AMQPConnection($arrCredentials);
+        $this->_amqpConnection = new \AMQPConnection($arrCredentials);
     }
     
     public function getConnection()
