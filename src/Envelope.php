@@ -28,7 +28,7 @@ class Envelope
 {
     private $_amqpEnvelope;
 
-    public function __construct(AMQPEnvelope $amqpEnvelope)
+    public function __construct(\AMQPEnvelope $amqpEnvelope)
     {
         $this->_amqpEnvelope = $amqpEnvelope;
     }
