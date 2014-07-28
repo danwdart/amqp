@@ -48,7 +48,7 @@ class Connection
         return $this->_amqpConnection->setHost($strHost);
     }
     
-    public function getLogin($strLogin)
+    public function getLogin()
     {
         return $this->_amqpConnection->getLogin();
     }
